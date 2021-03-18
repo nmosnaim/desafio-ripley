@@ -1,0 +1,22 @@
+[
+    {
+        "rut": "194761953",
+        "numeroCuenta": 1,
+        "saldo": 90
+    },
+    {
+        "rut": "194761954",
+        "numeroCuenta": 2,
+        "saldo": 30
+    },
+    {
+        "rut": "194761955",
+        "numeroCuenta": 3,
+        "saldo": 50
+    },
+    {
+        "rut": "19476195k",
+        "numeroCuenta": 4,
+        "saldo": 300
+    }
+]

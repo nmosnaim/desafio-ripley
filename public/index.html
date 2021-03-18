@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Desafío Nicolás Mosnaim</title>
+        <link rel="stylesheet" href="/style.css">
+        <script type="text/javascript" src="/script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Desafío Nicolás Mosnaim</h1>
+                <h2>Microservicios basados en Node.js para responder intenciones determinadas por chatbot</h2>
+            </header>
+            <hr />
+            <div class="three-columns">
+                <section>
+                    <header>
+                        <h3>Consulta de saldo</h3>
+                    </header>
+                    <label for="input-rut">RUT</label>
+                    <input type="text" id="input-rut" value="194761953" />
+                    <br>
+                    <button onclick="fetchSaldo()">Consultar</button>
+                </section>
+                <section>
+                    <header>
+                        <h3>Transferencia bancaria</h3>
+                    </header>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="input-cuenta-1">Cuenta Origen</label>
+                            </td>
+                            <td>
+                                <input type="text" id="input-cuenta-1" value="1" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="input-cuenta-2">Cuenta Destino</label>
+                            </td>
+                            <td>
+                                <input type="text" id="input-cuenta-2" value="2" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="input-monto">Monto a transferir</label>
+                            </td>
+                            <td>
+                                <input type="text" id="input-monto" value="10" />
+                            </td>
+                        </tr>
+                    </table>
+                    <button onclick="doTransfer()">Transferir</button>
+                </section>
+                <section>
+                    <header>
+                        <h3>Consulta de indicadores económicos</h3>
+                    </header>
+                    <select id="input-indicador">
+                        <option value="usd" selected>Dólar</option>
+                        <option value="utm">UTM</option>
+                        <option value="uf">UF</option>
+                    </select>
+                    <br>
+                    <button onclick="fetchIndicador()">Consultar</button>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
